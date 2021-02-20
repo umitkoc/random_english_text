@@ -16,6 +16,8 @@ app.config['Debug']=False
 def Home():
     return Text()
 
+if __name__=="__main__":
+    app.run()
 
 
 
