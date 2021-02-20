@@ -12,7 +12,7 @@ def Text():
 
 app=Flask(__name__)
 app.config['Debug']=False
-@app.route('/https://yourAPI.com',methods=['Get'])
+@app.route('/https://rest-api.com',methods=['Get'])
 def Home():
     return Text()
 
