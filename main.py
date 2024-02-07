@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup as bs
 from requests import get
 from flask import Flask
+from waitress import serve
 
 app=Flask(__name__)
 app.config['Debug']=False
@@ -22,4 +23,4 @@ def Word():
 
 
 if __name__=="__main__":
-    app.run()
+    serve(app=app,port=5000)
